@@ -14,3 +14,25 @@ for t in range(T):
     print(f'#{t + 1}')
     for i in range(0, len(s), 10):
         print(s[i:i + 10])
+
+
+# 처음 짠 코드
+
+t = int(input())
+ 
+for i in range(t):
+    zip = ''
+    for m in range(int(input())):
+        al, num = input().split()
+        zip += al*int(num)
+     
+    count = 0
+    print(f'#{i+1}')
+    for n in range(len(zip)):
+        print(zip[n], end='')
+        count += 1
+        if count == 10:
+            print()
+            count = 0
+    print()
+print()
