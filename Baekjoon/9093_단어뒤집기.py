@@ -1,6 +1,7 @@
 # 116ms
 # join메서드로 리스트에 있는 단어들 문자열로 출력
 # input자체에 readline 넣어줘서 처음부터 읽는 속도 빠르게
+# split()써야 단어별로 리스트에 들어감
 import sys
 input = sys.stdin.readline
 
