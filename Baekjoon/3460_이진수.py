@@ -19,10 +19,18 @@ for _ in range(T):
         if l:
             print(i, end=' ')
 
-# 아래 풀이 안 보고 다시 풀기
 
+# 220811
+T = int(input())
 
-
+for test_case in range(T):
+    n = int(input())
+    cnt = 0
+    while n:
+        if n % 2:
+            print(cnt, end=' ')
+        n //= 2
+        cnt += 1
 
 
 
