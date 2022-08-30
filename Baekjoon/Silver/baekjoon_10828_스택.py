@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('input.txt')
+sys.stdin = open('../input.txt')
 class Stack:
     def __init__(self):
         self.stack = [0] * 10000
