@@ -1,11 +1,8 @@
 # 알고리즘
 
 ## 계획
-| 순번 | Tag                          | 태그                | 문제집    | 추천 문제 수 | 총 문제 수 |  상태             |
-| :--: | :--------------------------: | :-----------------: | :------:  | :---------:  | :------: |:---------------:|
-| 00 | Data Structure | 자료구조 | [바로가기](./data_structure) | 16 | 25 | ![status][Doing] |
-| 01 | Data Structure 2 | 자료구조 2 | [바로가기](./data_structure2) | 11 | 21 | ![status][Doing] |
-| 02 | Tree | 트리 | [바로가기](./tree) | 15 | 44 | ![status][Doing] |
-| 03 | Math | 수학 | [바로가기](./math) | 18 | 29 | ![status][Doing] |
-| 04 | Greedy | 탐욕법 | [바로가기](./greedy) | 27 | 62 | ![status][Doing] |
-| 05 | Dynamic Programming 1 | 동적계획법 1 | [바로가기](./dynamic_programming_1) | 27 | 80 | ![status][Doing] |
+|          순번          |        추천 문제         |        문제 번호         |        문제 이름         |         난이도          |        풀이 링크         |
+| :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
+| 00 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/10828" target="_blank">10828</a> | <a href="https://www.acmicpc.net/problem/10828" target="_blank">스택</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/7.svg"/> | <a href="./../solution/data_structure/10828">바로가기</a> |
+| 01 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/9012" target="_blank">9012</a> | <a href="https://www.acmicpc.net/problem/9012" target="_blank">괄호</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/7.svg"/> | <a href="./../solution/data_structure/9012">바로가기</a> |
+| 02 |  :heavy_check_mark:  | <a href="https://www.acmicpc.net/problem/18258" target="_blank">18258</a> | <a href="https://www.acmicpc.net/problem/18258" target="_blank">큐 2</a> | <img height="25px" width="25px" src="https://static.solved.ac/tier_small/7.svg"/> | <a href="./../solution/data_structure/18258">바로가기</a> |
