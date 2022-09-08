@@ -13,4 +13,3 @@ def dfs(k):
             dfs(i+1)
             lst.pop()
 
-dfs(0)
