@@ -35,4 +35,4 @@
 ## A형 대비
 |          순번          |        풀이 확인         |         풀이 정리         |         문  제         |   
 | :-----: | :-----: | :-----: | :-----: |
-| 01 |  :heavy_check_mark:  |  | <a href="https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV7GLXqKAWYDFAXB" target="_blank">2805. 농작물 수확하기</a> | 
+| 01 |    |  | [1767 프로세서 연결하기](https://bit.ly/3oF4iz7) | 
