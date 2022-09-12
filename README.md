@@ -21,7 +21,7 @@
 | 16 |    |  | [1220. Magnetic](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14hwZqABsCFAYD) |
 | 17 |    |  | [1258. 행렬찾기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18LoAqItcCFAZN) |
 | 18 |    |  | [1974. 스도쿠검증](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5Psz16AYEDFAUq) |
-| 19 | :heavy_check_mark:   |  | [1961. 숫자 배열 회전](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5Pq-OKAVYDFAUq) | 
+| 19 | :heavy_check_mark:   | :heavy_check_mark:  | [1961. 숫자 배열 회전](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5Pq-OKAVYDFAUq) | 
 | 20 |    |  | [4466. 최대 성적표 만들기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWOUfCJ6qVMDFAWg) |
 | 21 |    |  | [1979. 어디에 단어가 들어갈 수 있을까](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PuPq6AaQDFAUq) | 
 | 22 |    |  | [6190. 정곤이의 단조 증가하는 수](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWcPjEuKAFgDFAU4) | 
@@ -29,7 +29,7 @@
 | 24 |    |  | [1215. 회문1](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14QpAaAAwCFAYi) |
 | 25 |    |  | [1216. 회문2](https://swexpertacademy.com/main/searchAll/search.do?keyword=1216) |
 | 26 |    |  | [1860. 진기의 최고급 붕어빵](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LsaaqDzYDFAXc) |
-| 27 |  :heavy_check_mark:  |  | [4613. 러시아 국기 같은 깃발](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQl9TIK8qoDFAXj) |
+| 27 |  :heavy_check_mark:  | :heavy_check_mark: | [4613. 러시아 국기 같은 깃발](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQl9TIK8qoDFAXj) |
 
 
 ## A형 대비
