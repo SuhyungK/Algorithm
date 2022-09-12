@@ -29,7 +29,7 @@
 | 24 |    |  | [1215. 회문1](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14QpAaAAwCFAYi) |
 | 25 |    |  | [1216. 회문2](https://swexpertacademy.com/main/searchAll/search.do?keyword=1216) |
 | 26 |    |  | [1860. 진기의 최고급 붕어빵](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LsaaqDzYDFAXc) |
-| 27 |    |  | [4613. 러시아 국기 같은 깃발](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQl9TIK8qoDFAXj) |
+| 27 |  :heavy_check_mark:  |  | [4613. 러시아 국기 같은 깃발](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQl9TIK8qoDFAXj) |
 
 
 ## A형 대비
