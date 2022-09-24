@@ -54,7 +54,7 @@
 | 17 |    |  | [2115. 벌꿀채취](https://bit.ly/3sw6A4t) |
 | 18 |    |  | [5653. 줄기세포배양](https://bit.ly/3LpYDqo) |
 | 19 |    |  | [1949. 등산로 조성](https://bit.ly/35Wj4L7) |
-| 20 |    |  | [2382. 미생물 격리](https://bit.ly/3GCClOr) |
+| 20 | :heavy_check_mark:  | :heavy_check_mark: | [2382. 미생물 격리](https://bit.ly/3GCClOr) |
 | 21 |    |  | [2117. 홈 방범 서비스](https://bit.ly/3MM28Iv) |
 | 22 |    |  | [4322. 패킷 처리](https://bit.ly/3Kp8xHA) |
 | 23 |    |  | [4340. 파이프 연결]() |
