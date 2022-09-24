@@ -1,17 +1,17 @@
 T = int(input())
 for tc in range(1, T+1):
     N = int(input())
-    arr = [list(map(int, input().split())) for _ in range(N)]
-    queue = [(0, 0, 0)]
-
+    dis = [list(map(int, input())) for _ in range(N)]
+    visit = [[N*N*9] * N for _ in range(N)]
+    visit[0][0] = 0
+    queue = [(0, 0)]
+ 
     while queue:
-        i, j, s = queue.pop(0)
-        for di, dj in ((0, 1), (1, 0)):
-            ni, nj = i+di, j+dj
-            if -1 < ni < N and -1 < nj < N:
-                queue.append((ni, nj, s+arr[ni][nj]))
-
-        if (i, j) == (N-1, N-1):
-            print(queue)
-
-    print(f'#{tc}')
+        x, y = queue.pop(0)
+        for dx, dy in ((0, 1), (0, -1), (1, 0), (-1, 0)):
+            nx, ny = x + dx, y + dy
+            if 0 <= nx < N and 0 <= ny < N and visit[nx][ny] > visit[x][y] + dis[nx][ny]:
+                visit[nx][ny] = visit[x][y] + dis[nx][ny]
+                queue.append((nx, ny))
+ 
+    print(f'#{tc}', visit[N-1][N-1])
