@@ -1,14 +1,25 @@
 import sys
 sys.stdin = open('test.txt', 'r')
 
-"""
-현재 위치에서 4방향으로 디저트 가게를 조사하게 되는데
-
-"""
 def dfs(r, c, idx, cnt):
+    global maxV
     if idx == 4:
         return
-    
+    elif idx == 3 and (r, c) == (i, j):
+        if maxV < cnt:
+            maxV = cnt
+        return
+
+    dr, dc = r + dx[idx], c + dy[idx]
+    if -1 < dr < N and -1 < dc < N:
+        if dessert.get(arr[dr][dc]):
+            return
+        else:
+            dessert[arr[dr][dc]] = 1
+            dfs(dr, dc, idx, cnt+1)
+            dfs(dr, dc, idx+1, cnt+1)
+    else:
+        return
 
 
 T = int(input())
@@ -22,8 +33,7 @@ for tc in range(1, T+1):
     maxV = -1
     for i in range(N-2):
         for j in range(1, N-1):
-            cnt = 0
             dessert = {}
-            maxV = max(maxV, dfs(i, j, 0))
+            dfs(i, j, 0, 0)
                 
-    print(f'#{tc}')
+    print(f'#{tc}', maxV)
