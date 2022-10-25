@@ -1,43 +1,38 @@
-def bfs():
-    while 1:
-        newWater = []
-        print('에러')
-        for wr, wc in water:
-            for i in range(4):
-                nr, nc = wr + dr[i], wc + dr[i]
-                if -1 < nr < r and -1 < nc < c and fst[nr][nc] == '.':
-                    fst[nr][nc] = '*'
-                    newWater.append((nr, nc))
-        
-        print('에러')
-        newbb = []
-        for br, bc in bb:
-            for i in range(4):
-                nr, nc = br + dr[i], bc + dr[i]
-                if -1 < nr < r and -1 < nc < c and fst[nr][nc] not in ['*', 'X']:
-                    if fst[nr][nc] == 'D':
-                        return fst[br][bc]
-                    else:
-                        fst[nr][nc] = fst[br][bc] + 1
-                    newbb.append((nr, nc))
-        water = newWater
-        bb = newbb
-
-    return 'KAKTUS'
-
 r, c = map(int, input().split())
-fst = [list(input()) for _ in range(r)]
+arr = [list(input()) for _ in range(r)]
+dr = [-1, 1, 0, 0]
+dc = [0, 0, 1, -1]
 
-dr = [1, 0, -1, 0]
-dc = [0, -1, 0, 1]
-
-water, bb = [], []
+water, beaver = [], []
 for i in range(r):
     for j in range(c):
-        if fst[i][j] == '*':
+        if arr[i][j] == '*':
             water.append([i, j])
-        elif fst[i][j] == 'S':
-            bb = [[i, j]]
-            fst[i][j] = 1
+        elif arr[i][j] == 'S':
+            arr[i][j] = 1
+            beaver = [[i, j]]
 
-bfs()
+def bfs(water, beaver):
+    while beaver:
+        new_water = []
+        for wr, wc in water:
+            for i in range(4):
+                nr, nc = wr + dr[i], wc + dc[i]
+                if -1 < nr < r and -1 < nc < c and arr[nr][nc] == '.':
+                    arr[nr][nc] = '*'
+                    new_water.append([nr, nc])
+        water = new_water
+
+        new_start = []
+        for br, bc in beaver:
+            for i in range(4):
+                nr, nc = br + dr[i], bc + dc[i]
+                if -1 < nr < r and -1 < nc < c and arr[nr][nc] in ['D', '.']:
+                    if arr[nr][nc] == 'D':
+                        return arr[br][bc] 
+                    arr[nr][nc] = arr[br][bc] + 1
+                    new_start.append([nr, nc])
+        beaver = new_start
+    return 'KAKTUS'
+
+print(bfs(water, beaver))
