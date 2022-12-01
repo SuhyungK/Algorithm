@@ -1,17 +1,28 @@
-for _ in range(int(input())):
+def contact():
     strn = input()
-    res = 'YES'
-
     while strn:
         if strn[:2] == '01':
             strn = strn[2:]
         elif strn[:3] == '100':
-            pass
-            # 1. 0을 다 지우고 2가지로 나눠서 검사
-            # 2. 뒤에 아무것도 없으면 걍 끝
-            # 3. 뒤에 01로 시작하면 1다 지우기
-            # 4. 뒤가 00
+            strn = strn[3:].lstrip('0')
+            if strn.startswith('11'):
+                if strn.lstrip('1').startswith('01') or strn.lstrip('1') == '':
+                    strn = strn.lstrip('1')
+                elif strn.lstrip('1').startswith('00'):
+                    strn = '1' + strn.lstrip('1')
+            elif strn.startswith('1'):
+                if strn.lstrip('1') == '' or strn.lstrip('1').startswith('01'):
+                    strn = strn.lstrip('1')
+                else:
+                    return 'NO'
+            else: 
+               return 'NO'
         else:
-            res = 'NO'
+            return 'NO'
+    return 'YES'
 
-    print(res)
+res = ''
+for _ in range(int(input())):
+    res += contact() + '\n'
+
+print(res)
