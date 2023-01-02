@@ -1,3 +1,5 @@
+# BOJ Gold 4 미로 탈출
+
 N, M = map(int, input().split())
 Hx, Hy = map(lambda x: int(x) - 1, input().split())
 Ex, Ey = map(lambda x: int(x) - 1, input().split())
