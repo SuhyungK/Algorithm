@@ -44,3 +44,23 @@ if n > 2:
         dp[i] = max(dp[i-1], W[i-1] + dp[i-2], dp[i-3] + W[i-1] + W[i-2])
 
 print(dp[n])
+
+# 3
+n = int(input())
+lst = [int(input()) for _ in range(n)]
+dp = [0] * (n+1)
+
+# n = 1,2 면 걍 다 마시는게 이득
+dp[1] = lst[0]
+
+if n > 1:
+    dp[2] = lst[0] + lst[1]
+
+# n이 3보다 크면 
+# max(그 잔을 안 마셨을 때, 1잔 연속 마셨을 때, 2잔 연속 마셨을 때)
+# 값을 dp[i]에 저장
+if n > 2:
+    for i in range(3, n+1):
+        dp[i] = max(dp[i-1], dp[i-2] + lst[i-1], dp[i-3] + lst[i-1] + lst[i-2])
+
+print(dp[n])
