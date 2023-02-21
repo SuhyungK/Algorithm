@@ -26,7 +26,7 @@ for chi in combinations(chickens, m):
 
 print(min_sum)
 
-#
+#------------------------------------------------------------------------------------#
 import sys
 from itertools import combinations
 input = sys.stdin.readline
@@ -52,7 +52,7 @@ for chi in combinations(chickens, m):
 
 print(min_sum)
 
-#
+#------------------------------------------------------------------------------------#
 import sys
 input = sys.stdin.readline
 n, m = map(int, input().split())
