@@ -26,10 +26,6 @@ def solution(maps):
                     visit[nr][nc][lever] = visit[r][c][lever] + 1
                     q.append((nr, nc, lever))
         
-        print()
-        for row in visit:
-            print(row)
-        print()
     return -1
                 
 
