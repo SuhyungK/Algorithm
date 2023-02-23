@@ -22,10 +22,6 @@ for i in range(N):
     for j in range(M):
         if planet[i][j] == 0:
             find_forest(i, j)
-            # print()
-            # for row in planet:
-            #     print(row)
-            # print()
             total_cnt += 1
 
 print(total_cnt)
