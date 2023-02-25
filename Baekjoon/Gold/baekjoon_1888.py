@@ -29,6 +29,7 @@ def isLump():
                 # bfs가 False면 곰팡이 퍼뜨리고 다시 실행
                 if cnt:
                     return False
+                cnt += 1
                 visit[i][j] = day
                 bfs(i, j)
     return True
