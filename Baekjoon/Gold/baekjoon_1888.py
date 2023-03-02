@@ -9,7 +9,6 @@ mold = defaultdict(list)
 def bfs(_i, _j):
     global mold
     q = [(_i, _j)]
-    cnt = 1
     while q:
         _r, _c = q.pop(0)
         for _dr, _dc in (-1, 0), (1, 0), (0, 1), (0, -1):
@@ -18,20 +17,22 @@ def bfs(_i, _j):
                 if visit[nr][nc] < day:
                     visit[nr][nc] = day
                     q.append((nr, nc))
-                    cnt += 1
-    # bfs 돌려서 한 번에 세서 나온 곰팡이의 개수가 (전체 개수 - 0의 개수)랑 같으면 곰팡이가 한 덩어리가 된 거
-    return cnt == total - sum(wall, []).count(0)
 
 # 덩어리인가??
 def isLump():
     global mold
+    cnt = 0
     for i in range(N):
         for j in range(M):
             if wall[i][j] and visit[i][j] != day:
-                visit[i][j] = day
                 # isLump()는 한 번만 실행되면 되고 bfs가 True면 바로 while문 종료
                 # bfs가 False면 곰팡이 퍼뜨리고 다시 실행
-                return bfs(i, j)
+                if cnt:
+                    return False
+                cnt += 1
+                visit[i][j] = day
+                bfs(i, j)
+    return True
 
 #--------------------함수 정의 끝--------------
 

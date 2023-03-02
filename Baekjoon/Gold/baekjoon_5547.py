@@ -1,3 +1,4 @@
+# G4 일루미네이션
 def bfs(l: tuple):
     global d
     r, c = l
@@ -40,3 +41,5 @@ for l in lst:
     bfs(l)
 
 print(d)
+W, H = map(int, input().split())
+arr = [list(map(int, input().split())) for _ in range(H)]
