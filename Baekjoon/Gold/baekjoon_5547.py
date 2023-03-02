@@ -55,21 +55,3 @@ def bfs(l: tuple):
 
 W, H = map(int, input().split())
 arr = [list(map(int, input().split())) for _ in range(H)]
-dir = {
-    0: ((0, -1), (1, -1), (-1, 0), (1, 0), (1, 1), (0, 1)),
-    1: ((-1, -1), (0, -1), (-1, 0), (1, 0), (-1, 1), (0, 1))
-}
-d = 0
-
-lst = []
-for se in 0, -1:
-    for w in range(W):
-        lst.append((H-1 if se == -1 else se, w))
-    for h in range(H):
-        lst.append((h, W-1 if se == -1 else se))
-
-lst = sorted(set(lst))
-for l in lst:
-    bfs(l)
-
-print(d)
