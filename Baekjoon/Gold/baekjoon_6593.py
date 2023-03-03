@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import sys
 sys.stdin = open('input.txt')
 
@@ -31,3 +32,12 @@ while 1:
     build = list(map(lambda x: list(x), ' '.join(input() for _ in range(L*(R+1))).split()))
     
     print(bfs(build, L, R, C))
+=======
+while True:
+    L, R, C = map(int, input().split())
+    if L == 0:
+        break
+    building = [list(p) if (p:=input()) else for _ in range(L * (R+1))]
+    
+    for i in range(R):
+>>>>>>> c585bf6 (merge전)
