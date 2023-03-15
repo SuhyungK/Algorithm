@@ -78,3 +78,33 @@ for x in range(100):
             ans += 1
 
 print(ans)
+
+import sys
+input = sys.stdin.readline
+
+N = int(input())
+grid = {}
+dx = (1, 0, -1, 0)
+dy = (0, -1, 0, 1)
+
+for _ in range(N):
+    x, y, d, g = map(int, input().split())
+    grid[(x, y)] = 1
+    dir = [d]
+    for i in range(g):
+        next = []
+        for d in dir[::-1]:
+            next.append((d+1)%4)
+        dir += next
+
+    for d in dir:
+        x += dx[d]
+        y += dy[d]
+        grid[(x, y)] = 1
+
+ans = 0
+for x, y in sorted(grid):
+    if grid.get((x, y+1)) and grid.get((x+1, y)) and grid.get((x+1, y+1)):
+        ans += 1
+
+print(ans)
