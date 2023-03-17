@@ -13,7 +13,7 @@ import math
 N = int(input())
 ans = {1: [2, 3, 5, 7]}
 
-def is_decimal(num):
+def is_prime(num):
     for j in range(1, 10, 2):
         tmp = int(str(num) + str(j))
         for n in range(3, int(math.sqrt(tmp)) + 1, 2):
@@ -25,7 +25,7 @@ l = 1
 while l < N:
     lst = []
     for a in ans[l]:
-        is_decimal(a)
+        is_prime(a)
     l += 1
     ans[l] = lst
 
