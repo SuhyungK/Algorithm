@@ -1,4 +1,4 @@
-# BOJ S1 직각삼각형
+# S1 직각삼각형 
 
 import sys
 input = sys.stdin.readline

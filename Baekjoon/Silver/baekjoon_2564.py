@@ -1,4 +1,4 @@
-# BOJ 경비원
+# 경비원
 
 H, V = map(int, input().split()) # H : 가로 / V : 세로
 stores = [tuple(map(int, input().split())) for _ in range(int(input()))]

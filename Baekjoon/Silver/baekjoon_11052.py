@@ -1,4 +1,4 @@
-# S1 카드 구매하기
+# 카드 구매하기
 
 N = int(input())
 card = [0] + list(map(int, input().split()))

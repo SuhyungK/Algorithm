@@ -1,4 +1,5 @@
-# BOJ S1 후보 추천하기
+# S1 후보 추천하기
+
 from collections import defaultdict
 
 N = int(input())

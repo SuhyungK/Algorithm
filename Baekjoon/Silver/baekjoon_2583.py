@@ -1,4 +1,5 @@
-# BOJ 2583 영역 구하기
+# 영역 구하기
+
 M, N, K = map(int, input().split())
 crd = [list(map(int, input().split())) for _ in range(K)]
 area = [[0] * N for _ in range(M)]

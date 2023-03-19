@@ -1,4 +1,4 @@
-# S1 링크와 스타트
+# 링크와 스타트
 
 N = int(input())
 stats = [list(map(int, input().split())) for _ in range(N)]
