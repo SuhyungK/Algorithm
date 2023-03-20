@@ -1,4 +1,4 @@
-# G5 핑거 스냅
+# 핑거 스냅
 
 def find_prime(n):
     if lst[n] == 'p': 

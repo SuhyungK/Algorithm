@@ -1,4 +1,4 @@
-# G3 공주님의 정원
+# 공주님의 정원
 
 import sys
 input = sys.stdin.readline

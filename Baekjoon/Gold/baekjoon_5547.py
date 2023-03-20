@@ -1,3 +1,5 @@
+# 일루미네이션
+
 # -------------------- dfs ---------------------
 W, H = map(int, input().split())
 arr = [[0] * (W+2)] + [[0] + list(map(int, input().split())) + [0] for _ in range(H)] + [[0] * (W+2)]

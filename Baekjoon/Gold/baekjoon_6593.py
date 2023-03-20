@@ -1,5 +1,4 @@
-import sys
-sys.stdin = open('input.txt')
+# 상범 빌딩
 
 def start(L, R, C):
     for i in range(L*R):

@@ -1,3 +1,5 @@
+# NQueen
+
 def queen(row):
     global cnt
     if row == N:

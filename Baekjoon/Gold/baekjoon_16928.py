@@ -1,3 +1,5 @@
+# 뱀과 사다리 게임
+
 N, M = map(int, input().split())
 ladder = {int(k) : int(v) for k, v in (input().split() for _ in range(N+M))}
 

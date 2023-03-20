@@ -1,3 +1,5 @@
+# 탈출
+
 r, c = map(int, input().split())
 arr = [list(input()) for _ in range(r)]
 dr = [-1, 1, 0, 0]

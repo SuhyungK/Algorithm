@@ -1,3 +1,5 @@
+# 머리 톡톡
+
 N = int(input())
 lst = [int(input()) for _ in range(N)]
 

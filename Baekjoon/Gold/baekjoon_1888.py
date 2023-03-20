@@ -6,6 +6,8 @@ total = N * M
 mold = defaultdict(list)
 
 #-------------------함수 정의 시작--------------
+# 곰팡이
+
 def bfs(_i, _j):
     global mold
     q = [(_i, _j)]

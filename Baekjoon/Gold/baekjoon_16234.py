@@ -1,3 +1,5 @@
+# 인구이동
+
 def bfs():
     flag = False
     for i in range(N):

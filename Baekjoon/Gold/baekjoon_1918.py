@@ -1,3 +1,5 @@
+# 후위 표기식
+
 exp = input()
 res = ''
 stack = []

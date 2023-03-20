@@ -1,4 +1,4 @@
-# 가장 긴 바이토닉 부분 수열
+# 가장 긴 바이토닉 부분 수열 
 
 N = int(input())
 lst = list(map(int, input().split()))
