@@ -1,4 +1,5 @@
 # 단지 번호 붙이기
+
 n = int(input())
 arr = [list(map(int, input())) for _ in range(n)]
 visited = [[0] * n for _ in range(n)]

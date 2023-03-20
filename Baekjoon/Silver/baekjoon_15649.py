@@ -1,3 +1,4 @@
+# N과 M 1
 def backTracking():
     if len(lst) == M:
         print(*lst)
