@@ -1,3 +1,5 @@
+# 직각삼각형
+
 while 1:
     lst = list(map(int, input().split()))
     if sum(lst) == 0:

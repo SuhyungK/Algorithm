@@ -1,3 +1,5 @@
+# 별찍기 20
+
 N = int(input())
 star = "*" * N
 

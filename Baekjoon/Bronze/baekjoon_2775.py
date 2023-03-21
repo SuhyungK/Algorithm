@@ -1,3 +1,5 @@
+# 부녀회장이 될테야
+
 def f():
     for i in range(1, n+1):
         for j in range(k):

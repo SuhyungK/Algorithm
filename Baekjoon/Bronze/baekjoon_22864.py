@@ -1,3 +1,5 @@
+# 피로도
+
 a, b, c, m = map(int, input().split())
 
 w = cnt = 0

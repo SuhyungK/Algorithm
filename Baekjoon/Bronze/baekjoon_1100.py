@@ -1,3 +1,5 @@
+# 하얀칸
+
 res = [input() for _ in range(8)]
 
 cnt = 0

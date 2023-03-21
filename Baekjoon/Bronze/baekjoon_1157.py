@@ -1,3 +1,5 @@
+# 단어공부
+
 word = input().lower()
 alpha = list(set(word))
 cnt = [word.count(a) for a in alpha]

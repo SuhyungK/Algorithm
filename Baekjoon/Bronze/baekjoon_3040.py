@@ -1,4 +1,4 @@
-# 백설공주와 일곱 난쟁이
+# 백설공주와 일곱 난쟁이 
 
 from itertools import combinations
 
