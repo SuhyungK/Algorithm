@@ -1,3 +1,5 @@
+# 기타줄
+
 import math 
 
 N, M = map(int, input().split())
