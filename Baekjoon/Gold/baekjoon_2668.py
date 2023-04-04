@@ -1,4 +1,4 @@
-# BOJ G5 숫자고르기
+# 숫자고르기
 
 N = int(input())
 lst = list(int(input()) for _ in range(N))

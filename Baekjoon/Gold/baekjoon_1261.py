@@ -1,3 +1,5 @@
+# 알고스팟
+
 M, N = map(int, input().split())
 arr = [list(map(int, input())) for _ in range(N)]
 v = [[1e9] * M for _ in range(N)]

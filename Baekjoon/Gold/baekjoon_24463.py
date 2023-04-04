@@ -1,4 +1,4 @@
-# BOJ Gold 5 미로
+# 미로
 import sys
 sys.setrecursionlimit(10000)
 

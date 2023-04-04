@@ -1,4 +1,4 @@
-# G5 도넛 행성
+# 도넛 행성
 from collections import deque
 
 N, M = map(int, input().split())

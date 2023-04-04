@@ -1,4 +1,4 @@
-# B2 줄 세기
+# 줄 세기
 
 N = int(input())
 lst = list(map(int, input().split()))

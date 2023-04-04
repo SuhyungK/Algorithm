@@ -1,3 +1,5 @@
+# 스타트와 링크
+
 N = int(input())
 arr = [list(map(int, input().split())) for _ in range(N)]
 limit = N // 2

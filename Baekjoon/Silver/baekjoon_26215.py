@@ -1,4 +1,4 @@
-# S3 눈 치우기
+# 눈 치우기
 
 N = int(input())
 snow = list(map(int, input().split())) + [0]

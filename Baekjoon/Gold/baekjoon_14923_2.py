@@ -1,4 +1,4 @@
-# BOJ Gold 4 미로 탈출
+# 미로 탈출
 import sys
 input = sys.stdin.readline
 

@@ -1,4 +1,5 @@
-# BOJ 음식물 피하기
+# 음식물 피하기
+
 import sys
 input = sys.stdin.readline
 

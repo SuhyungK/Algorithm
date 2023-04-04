@@ -1,4 +1,4 @@
-# G5 호석이 두 마리 치킨
+# 호석이 두 마리 치킨
 import sys
 sys.stdin = open('input.txt')
 

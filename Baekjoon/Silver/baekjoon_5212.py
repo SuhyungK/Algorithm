@@ -1,4 +1,4 @@
-# BOJ S2 지구 온난화
+# 지구 온난화
 
 R, C = map(int, input().split())
 sea = [list(input()) for _ in range(R)]

@@ -1,4 +1,4 @@
-# BOJ S4 A
+# A
 
 A = int(input())
 X = int(input())

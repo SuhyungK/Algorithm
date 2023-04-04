@@ -1,4 +1,5 @@
-# BOJ 인간-컴퓨터 상호작용
+# 인간-컴퓨터 상호작용
+
 from collections import defaultdict
 
 S = input()

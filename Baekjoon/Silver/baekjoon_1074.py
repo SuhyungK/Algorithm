@@ -1,4 +1,4 @@
-# S1 Z
+# S1 Z 
 
 N, r, c = map(int, input().split())
 
