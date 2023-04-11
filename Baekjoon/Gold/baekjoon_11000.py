@@ -2,14 +2,19 @@
 
 N = int(input())
 cls = [list(map(int, input().split())) for _ in range(N)]
-
 cls.sort(key=lambda x: x[1])
-i = cnt = 1
-while i < N:
-    j = 1
-    if cls[i-1][1] <= cls[i][0]:
-        j += 1
-        cnt += 1
-    i += j
+v = [0] * N
 
+cnt = 0
+for i in range(N):
+    if not v[i]:
+        v[i] = 1
+        next = i+1
+        cnt += 1
+        while next < N:
+            if cls[i][1] <= cls[next][0]:
+                v[next] = 1
+                i, next = next, next+1
+            else:
+                next += 1
 print(cnt)
