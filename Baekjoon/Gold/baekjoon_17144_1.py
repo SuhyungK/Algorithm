@@ -84,5 +84,3 @@ while t < T:
 answer = 2
 for row in dusts:
     answer += sum(row)
-
-print(answer)
