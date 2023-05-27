@@ -1,31 +1,19 @@
-#  머리 톡톡
+def find(x):
+    if rep[x] != x:
+        return find(rep[x])
+    return rep[x]
 
-def sol():
-    def INPUT(lst):
-        student = {}
-        for i in range(N):
-            l = lst[i]
-            student[l] = student.get(l, 0) + 1
-        return student
+def union(x, y):
+    rep[find(y)] = find(x) 
 
-    def multiple_judge(student):
-        ans = {}
-        for num, cnt in student.items():
-            ans[num] = ans.get(num, 0) + (cnt-1)
-            for j in range(num * 2, 1000001, num):
-                if student.get(j):
-                    ans[j] = ans.get(j, 0)+student[num]
-        return ans
-    
+def cycle():
+    pass
 
-    N = int(input())
-    lst = list(int(input()) for _ in range(N))
 
-    student = INPUT(lst)
-    ans = multiple_judge(student)
+N, M = map(int, input().split())
+rep = [n for n in range(N)]
 
-    for l in lst:
-        print(ans[l])
-
-if __name__ == '__main__':
-    sol()
+for m in range(M):
+    i, j = map(int, input().split())
+    union(i, j)
+    print(m, rep)
