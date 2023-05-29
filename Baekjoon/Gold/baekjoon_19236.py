@@ -39,11 +39,6 @@ def move(fish, dir, loc):
             dir[nx][ny], dir[x][y] = dir[x][y], dir[nx][ny]
 
             break
-        print(n)
-        for row in fish:
-            print(row)
-        print()
-
 
 def eat(sx, sy, total_eat, fish, dir, loc): # 현재 상어의 위치
     global ans
@@ -51,16 +46,8 @@ def eat(sx, sy, total_eat, fish, dir, loc): # 현재 상어의 위치
     fish[sx][sy] = -1
     d = dir[sx][sy]
 
-    print('move 전')
-    for row in fish:
-        print(row)
-
     # 물고기 움직이기
     move(fish, dir, loc)
-
-    print('move 후', d)
-    for row in fish:
-        print(row)
 
     fish[sx][sy] = 0
     cnt = 0
