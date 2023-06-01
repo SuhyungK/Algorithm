@@ -6,46 +6,65 @@ def melt(i, j, t):
         cnt += 1
     if -1<j-1 and not iceberg[i][j-1]:
         cnt += 1
-    if i+1<N and iceberg[i+1][j]:
+    if i+1<N and not iceberg[i+1][j]:
         cnt += 1
-    if j+1<M and iceberg[i][j+1]:
+    if j+1<M and not iceberg[i][j+1]:
         cnt += 1
     
     if t >= cnt:
         return t-cnt
     return 0
 
-def bfs(visit, si, sj):
-    q = [(si, sj)]
+def _init():
+    q = []
+    for i in range(N):
+        for j in range(M):
+            if iceberg[i][j]:
+                q.append((i, j))
+    return q
 
-    while q:
-        si, sj = q.pop(0)
-        for ni, nj in (si+1, sj), (si-1, sj), (si, sj+1), (si, sj-1):
-            if ni<0 or nj<0 or ni>=N or nj>=M:
-                continue
-            if not visit[ni][nj] and iceberg[ni][nj]:
-                visit[ni][nj] = melt(ni, nj, iceberg[ni][nj])
-                q.append((ni, nj))
+def bfs(i, j, year):
+    global visit
+    _q = [(i, j)]
+    _new_q = []
+    while _q:
+        i, j = _q.pop(0)
 
-    return visit
+        for ni, nj in (i-1, j), (i+1, j), (i, j-1), (i, j+1):
+            if iceberg[ni][nj] and visit[ni][nj] != year:
+                visit[ni][nj] = year
+                _new_q.append((ni, nj, melt(ni, nj, iceberg[ni][nj])))
+                _q.append((ni, nj))
+
+    return _new_q
 
 def sol():
-    year = 0
+    global iceberg
+    q = _init()
+    year = 1
+    
     while True:
-        is_lump = False
-        visit = [[0]*M for _ in range(N)]
-        for i in range(N):
-            for j in range(M):
-                if iceberg[i][j] and not visit[i][j]:
-                    if is_lump:
-                        return year
-                    visit = bfs(visit, i, j)
-                    is_lump = True
-        if not is_lump:
-            return 0
+        new_q, is_lump = [], False
+        for y, x in q:
+            if visit[y][x] != year:
+                if is_lump:
+                    return year-1
+                new_q.extend(bfs(y, x, year))
+
+                is_lump = True
+
+        q = []
+        for y, x, t in new_q:
+            if t:
+                q.append((y, x))
+                iceberg[y][x] = t
+            else: iceberg[y][x] = 0
+
+        if not q: return 0
         year += 1
 
 if __name__ == '__main__':
     N, M = map(int, input().split())
     iceberg = [list(map(int, input().split())) for _ in range(N)]
+    visit = [[0]*M for _ in range(N)]
     print(sol())
