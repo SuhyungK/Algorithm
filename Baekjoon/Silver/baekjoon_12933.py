@@ -15,6 +15,8 @@ def sol():
             if quack[f]>0: 
                 quack[f] -= 1
                 quack[b] += 1
+            else:
+                return -1
 
     if quack[-1] > 0:
         return quack[-1]
