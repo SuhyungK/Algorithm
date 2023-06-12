@@ -36,7 +36,7 @@
 |          순번          |        풀이 확인         |         풀이 정리         |         문  제         |   
 | :-----: | :-----: | :-----: | :-----: |
 | 01 |    |  | [1767. 프로세서 연결하기](https://bit.ly/3oF4iz7) | 
-| 02 |    |  | [1952. 수영장](https://bit.ly/3JgUKC5) | 
+| 02 | :heavy_check_mark: | :heavy_check_mark: | [1952. 수영장](https://bit.ly/3JgUKC5) | 
 | 03 |    |  | [4013. 특이한 자석](https://bit.ly/3oC2YNt) |
 | 04 |    |  | [2383. 점심 식사시간](https://bit.ly/3GBb9Q5) |
 | 05 |    |  | [2477. 차량 정비소](https://bit.ly/3rF89ho) |
