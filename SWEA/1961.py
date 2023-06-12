@@ -10,7 +10,7 @@ for tc in range(1, T+1):
         for i in range(n):
            	rows[i].append(arr[i])
 
-    for row in rows:
-        for r in row:
-            print(''.join(r), end=' ')
-        print()
+    # for row in rows:
+    #     for r in row:
+    #         print(''.join(r), end=' ')
+    #     print()
