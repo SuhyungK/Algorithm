@@ -1,20 +1,18 @@
-def comb(k):
-    if k == M:
-        print(*lst)
-        return 
-    
-    prev = -1
-    for i in range(N):
-        if not check[i] and prev != arr[i]:
-            lst[k] = arr[i]
-            check[i] = True
-            comb(k+1)
-            prev = arr[i]
-            check[i] = False
+N = int(input())
+ans = [0] * N
+for i in range(N):
+    a, b, c = map(int, input().split())
+    if a == b and b == c:
+        ans[i] = 10000 + 1000 * a
+    elif a == b:
+        ans[i] = 1000 + 100 * a
+    elif b == c:
+        ans[i] = 1000 + 100 * b
+    elif c == a:
+        ans[i] = 1000 + 100 * c
+    else:
+        ans[i] = max(a, b, c)
 
-N, M = map(int, input().split())
-arr = sorted(list(map(int, input().split())))
-check = [False]*N
-lst = [-2]*M
-
-comb(0)
+print(max(5, 6, 7))
+print(max(ans))
+       
