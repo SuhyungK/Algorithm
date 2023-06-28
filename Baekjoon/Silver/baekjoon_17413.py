@@ -13,6 +13,7 @@ def reverse():
     while stack:
         ans += stack.pop()
 
+
 stack, L = deque(), len(string)
 idx, ans = -1, ''
 while idx+1 < L:
