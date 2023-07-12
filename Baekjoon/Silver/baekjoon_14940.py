@@ -1,5 +1,6 @@
 # 쉬운 최단거리
 
+# 2의 위치를 찾고 & 갈 수 없는 곳의 visited 값을 0으로 초기화
 def _init():
     si = sj = -1
     for i in range(n):
@@ -10,6 +11,7 @@ def _init():
                 visited[i][j] = 0
     return si, sj
 
+# bfs 탐색으로 각 칸에 대해 2에서부터의 최단 거리 구하기
 def bfs(si, sj):
     queue = [(si, sj)]
     
