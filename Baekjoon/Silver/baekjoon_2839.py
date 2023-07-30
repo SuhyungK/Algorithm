@@ -1,14 +1,21 @@
-# 설탕배달
+# 설탕 배달 
 
-n = int(input())
+N = int(input())
 
-m = n // 3
-for i in range(m+1):
-    k = n-3*i
-    if not k % 5:
-        res = k//5 + i
-        break
-else:
-    res = -1
+def solution():
+    if N == 3 or N == 5:
+        return 1
+    
+    if N == 4:
+        return -1
+    
+    dp = [1e9]*(N+1)
+    dp[3] = dp[5] = 1
+    for i in range(6, N+1):
+        dp[i] = min(dp[i-3], dp[i-5])+1
 
-print(res)
+    if dp[N] >= 1e9:
+        return -1
+    return dp[-1]
+
+print(solution())
