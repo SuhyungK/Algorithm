@@ -31,3 +31,4 @@ while True:
     if not n:
         break
     print(f'Problem {pb}: {sol(n)}')
+    pb += 1
