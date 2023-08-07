@@ -1,27 +1,33 @@
-def bfs(N, K):
-    queue = [(N, 0)]
+# 숨바꼭질 3
 
-    visited[N] = 0
-    while queue:
-        s, t = queue.pop(0)
-        
-        if s == K:
-            return
-        
-        if -1<s-1 and t<visited[s-1]:
-            queue.append((s-1, t+1))
-            visited[s-1] = t+1
-        if s+1<100001 and t<visited[s+1]:
-            queue.append((s+1, t+1))
-            visited[s+1] = t+1
-        if s*2<100001 and t<visited[s*2]:
-            queue.append((s*2, t))
-            visited[s*2] = t
-        print(visited[:K])
+import heapq
 
 N, K = map(int, input().split())
-visited = [1e9]*100001
 
+def sol():
+    if N >= K:
+        return N-K
+    
+    visited = [1e9]*100001
+    visited[N] = 0
+    pq = [(0, N)]
 
-bfs(N, K)
-print(visited[K])
+    while pq:
+        dist, x = heapq.heappop(pq)
+
+        if visited[x] != dist:
+            continue
+        
+        if x+1 < 100001 and visited[x+1] > dist+1:
+            visited[x+1] = dist+1
+            heapq.heappush(pq, (dist+1, x+1))
+        if x-1 > -1 and visited[x-1] > dist+1:
+            visited[x-1] = dist+1
+            heapq.heappush(pq, (dist+1, x-1))
+        if 2*x < 100001 and visited[2*x] > dist:
+            visited[2*x] = dist
+            heapq.heappush(pq, (dist, 2*x))
+    
+    return visited[K]
+
+print(sol())
