@@ -1,33 +1,27 @@
-# 케빈베이컨의6단계법칙
+# 케빈 베이컨의 6단계 법칙
 
-def dfs(n):
-    global cnt
-    for i in range(1, N):
-        q = [n]
-        visit = [0] * (N + 1)
-        while q:
-            if q == n:
-                cnt = 0
-                break
-            for j in frns[i]:
-                if visit[j] == 0:
-                    visit[j] = 1
-                    q.append(j)
+n, m = map(int, input().split())
 
-    return cnt
+arr = [[100000]*n for _ in range(n)]
 
-N, M = map(int, input().split()) 
-users = [list(map(int, input().split())) for _ in range(M)]
-frns = [[] for _ in range(N + 1)] 
+# 입력값 초기화
+for _ in range(m):
+    a, b = map(int,input().split())
+    arr[a-1][b-1] = arr[b-1][a-1] = 1
 
-for user in users:
-    a, b = user
-    frns[a].append(b)
-    frns[b].append(a)
+for i in range(n):
+    arr[i][i] = 0
+    
+# 플로이드-워셜 알고리즘
+for k in range(n):
+    for i in range(n):
+        for j in range(n):
+            arr[i][j] = min(arr[i][j], arr[i][k]+arr[k][j])
 
-minV = (1e9, 1e9)
-for n in range(1, N+1):
-    cnt = 0
-    minV = min(minV, (n, dfs(n)))
-
-print(minV)
+# 최소값 찾기
+mv, mv_idx = 1e13, 0
+for idx, row in enumerate(arr,1):
+    if sum(row)<mv:
+        mv,mv_idx = sum(row), idx
+        
+print(mv_idx)
