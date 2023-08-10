@@ -19,9 +19,10 @@ for k in range(n):
             arr[i][j] = min(arr[i][j], arr[i][k]+arr[k][j])
 
 # 최소값 찾기
-mv, mv_idx = 1e13, 0
-for idx, row in enumerate(arr,1):
-    if sum(row)<mv:
-        mv,mv_idx = sum(row), idx
-        
-print(mv_idx)
+print(arr.index(min(arr, key=sum))+1)
+# mv, mv_idx = 1e13, 0
+# for idx, row in enumerate(arr,1):
+#     if sum(row)<mv:
+#         mv,mv_idx = sum(row), idx
+
+# print(mv_idx)
