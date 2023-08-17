@@ -2,8 +2,7 @@
 
 from heapq import heappop, heappush
 
-def time_calc(atom, i, j):
-    x1, y1, d1, k1, x2, y2, d2, k2 = *atom[i], *atom[j]
+def time_calc(x1, y1, d1, x2, y2, d2):
 
     if d1 == d2:
         return 0
@@ -46,35 +45,28 @@ for tc in range(int(input())):
     
     pq = []
     for i in range(N-1):
+        x1, y1, d1 = atom[i]
         for j in range(i, N):
-            result = time_calc(atom, i, j)
+            result = time_calc(x1, y1, d1, atom[j][:3])
             if result:
                 heappush(pq, (result, i, j))
     
-    ans = 0
-    if pq:
-        maxTime = pq[0][0]
-        possible = [False for _ in range(len(atom))]
-        disappear_atom = set()
-        while pq:
-            time, i, j = heappop(pq)
-             
-            # print(time, i, j, possible, disappear_atom)
-            if maxTime < time:
-                # print(disappear_atom)
-                for idx in disappear_atom:
-                    ans += atom[idx][3]
-                    possible[idx] = True
- 
-                maxTime = time
-                disappear_atom = set()
- 
-            if possible[i] or possible[j]:
-                continue
- 
-            disappear_atom.update((i, j))
- 
-        for idx in disappear_atom:
-            ans += atom[idx][3]
+    exploded, total_energy = [False]*len(atom), 0
+    while pq:
+        exploded_time = pq[0][0]
+        exploded_atoms = set()
 
-    print(f'#{tc+1} {ans}')
+        while pq and pq[0][0] == exploded_time:
+            time, i, j = heappop(pq)
+
+            if exploded[i] or exploded[j]:
+                continue
+
+            exploded_atoms.add(i)
+            exploded_atoms.add(j)
+
+        for k in exploded_atoms:
+            exploded[k] = True
+            total_energy += atom[k][3]
+
+    print(f'#{tc+1} {total_energy}')
