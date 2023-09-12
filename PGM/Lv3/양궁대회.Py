@@ -17,10 +17,9 @@ def solution(n, info):
 
         if info[i]:
             dfs(i+1, n-info[i]-1, score+2*(10-i), arrow+[info[i]+1])
-            dfs(i+1, n, score, arrow+[0])
         else:
             dfs(i+1, n-1, score+10-i, arrow+[1])
-            dfs(i+1, n, score, arrow+[0])
+        dfs(i+1, n, score, arrow+[0])
 
     
     ans, tmp, score = [-1]*12, [], -sum(10-i for i in range(11) if info[i])
