@@ -41,7 +41,7 @@
 | 04 |    |  | [2383. 점심 식사시간](https://bit.ly/3GBb9Q5) |
 | 05 |    |  | [2477. 차량 정비소](https://bit.ly/3rF89ho) |
 | 06 |    |  | [5650. 핀볼 게임](https://bit.ly/3gCJ3t7) |
-| 07 |    |  | [5648. 원자 소멸 시뮬레이션](https://bit.ly/3rG89xS) |
+| 07 | :heavy_check_mark: | :heavy_check_mark: | [5648. 원자 소멸 시뮬레이션](https://bit.ly/3rG89xS) |
 | 08 |    |  | [2112. 보호필름](https://bit.ly/3HB8Xtc) |
 | 09 |    |  | [1953. 탈주범 검거](https://bit.ly/3GF70dV) |
 | 10 |    |  | [2105. 디저트 카페](https://bit.ly/3JdU7cw) |
