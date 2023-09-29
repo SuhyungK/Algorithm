@@ -1,5 +1,3 @@
-# 게임 맵 최단거리
-
 def solution(maps):
     q = [(0, 0)]
     

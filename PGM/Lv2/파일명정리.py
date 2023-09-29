@@ -23,7 +23,3 @@ def solution(files):
     
     answer = [''.join(a) for a in answer]
     return answer
-
-print(solution(["img000000", "img1.png","img2","IMG02"]))
-
-#  ["img000012345", "img1.png","img2","IMG02"]

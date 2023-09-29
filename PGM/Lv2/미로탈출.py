@@ -27,12 +27,3 @@ def solution(maps):
                     q.append((nr, nc, lever))
         
     return -1
-                
-
-# print(solution(['SOOXL', 'OOOOO', 'OOXXX', 'OOOOO', 'OOOOE']))
-print(solution(['SXE', 'OOO', 'OOL']))
-"""
-SXE
-OOO
-OOL
-"""

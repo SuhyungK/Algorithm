@@ -39,5 +39,3 @@ def solution(name):
         print()
 
 from collections import deque
-
-print('정답', solution("BBBAAAAAAAB"))
