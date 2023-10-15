@@ -21,7 +21,7 @@ parent = [i for i in range(N+1)]
 cost = 0
 route.sort(key=lambda x: x[-1])
 for a, b, c in route:
-    if find(a) == find(b):
+    if find(a) == find(b): 
         continue
     union(a, b)
     cost += c
