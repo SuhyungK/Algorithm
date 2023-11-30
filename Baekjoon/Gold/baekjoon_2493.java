@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class Main {
+public class baekjoon_2493 {
     private static final int MAX_HEIGHT = 100_000_001;
     public static void main(String[] args) throws IOException {
         // 입력값 받기
