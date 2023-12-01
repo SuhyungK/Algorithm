@@ -6,6 +6,27 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+
+// class Solution {
+//     public int solution(int a, int b, int c, int d) {
+//         if (a == b && b == c && c == d) return 1111 * a;
+//         else if (a == b && b == c && c != d) return (int) Math.pow(10 * a + d, 2);
+//         else if (a == b && b == d && c != d) return (int) Math.pow(10 * a + c, 2);
+//         else if (a == c && c == d && a != b) return (int) Math.pow(10 * a + b, 2);
+//         else if (b == c && c == d && a != b) return (int) Math.pow(10 * b + a, 2);
+//         else if (a == b && c == d && b != c) return (a + c) * Math.abs(a - c);
+//         else if (a == d && b == c && a != b) return (a + b) * Math.abs(a - b);
+//         else if (a == c && b == d && a != b) return (a + b) * Math.abs(a - b);
+//         else if (a == b && c != d) return c * d;
+//         else if (a == c && b != d) return b * d;
+//         else if (a == d && b != c) return b * c;
+//         else if (b == c && a != d) return a * d;
+//         else if (b == d && a != c) return a * c;
+//         else if (c == d && a != b) return a * b;
+//         else return Collections.min(Arrays.asList(a, b, c, d));
+//     }
+// }
+
 public class Solution {
     public int solution(int a, int b, int c, int d) {
 
