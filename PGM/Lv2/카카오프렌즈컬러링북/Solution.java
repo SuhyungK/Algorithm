@@ -20,18 +20,18 @@ public class Solution {
                 while (!queue.isEmpty()) {
                     int[] q = queue.poll();
 
-                    int ii = q[0];
-                    int jj = q[1];
+                    int curX = q[0];
+                    int curY = q[1];
                     int p = picture[i][j];
 
                     for (int k = 0; k < 4; k++) {
-                        int ni = ii + direction[k][0];
-                        int nj = jj + direction[k][1];
+                        int nextX = curX + direction[k][0];
+                        int nextY = curY + direction[k][1];
 
-                        if (!(-1 < ni && ni < m && -1 < nj && nj < n && !visited[ni][nj] && picture[ni][nj] == p)) continue;
+                        if (!(-1 < nextX && nextX < m && -1 < nextY && nextY < n && !visited[nextX][nextY] && picture[nextX][nextY] == p)) continue;
                         colorSize++;
-                        queue.add(new int[] {ni, nj});
-                        visited[ni][nj] = true;
+                        queue.add(new int[] {nextX, nextY});
+                        visited[nextX][nextY] = true;
                     }
                 }
                 answer[1] = Math.max(answer[1], colorSize);
