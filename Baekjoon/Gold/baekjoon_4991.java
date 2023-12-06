@@ -38,10 +38,11 @@ class Item {
     }
 }
 
-public class Main {
+public class baekjoon_4991 {
     
     static int[][] direction = new int[][] {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
 
+    // 더러운 위치 찾기
     static Map<Position, Integer> findDirty(char[][] arr) {
         Map<Position, Integer> positions = new HashMap<>();
         int cnt = 0;
@@ -54,6 +55,7 @@ public class Main {
         return positions;
     }
 
+    // 시작 위치 찾기
     static Position findStart(char[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[0].length; j++) {
@@ -87,6 +89,8 @@ public class Main {
                 if (nx < 0 || ny < 0 || nx >= h || ny >= w || arr[nx][ny] == 'x') continue;
                 
                 if (arr[nx][ny] == '*') {
+                    // 더러운 위치를 청소했다는 정보를 업데이트 
+                    // 더러운 위치에 부여된 번호에 해당하는 비트 값을 1로 변경
                     int nextBitmask = item.bitmask | (1 << positions.get(new Position(nx, ny)));
                     if (visited[nx][ny][nextBitmask] == 0) {
                         visited[nx][ny][nextBitmask] = cnt + 1;
@@ -112,7 +116,7 @@ public class Main {
 
             if (w == 0 && h == 0) break;
             
-            char[][] ROOM = new char[h][w];
+            char[][]ROOM  = new char[h][w];
             for (int i = 0; i < h; i++) {
                 ROOM[i] = br.readLine().toCharArray();
             }
