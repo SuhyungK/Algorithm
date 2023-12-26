@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class baekjoon_15810 {
     static int[] staffTimes;
     static int N, M;
 
@@ -40,6 +40,6 @@ public class Main {
             }
         }
         
-        System.out.println(mid);
+        System.out.println(right);
     }
 }
