@@ -1,4 +1,4 @@
-package Baekjoon.Gold;
+// 꿀벌 승연이
 
 import java.io.BufferedReader;
 import java.io.IOException;

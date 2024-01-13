@@ -1,4 +1,4 @@
-package Baekjoon.Gold;
+// 옥상 정원 꾸미기
 
 import java.io.*;
 import java.util.*;
