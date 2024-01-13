@@ -1,4 +1,6 @@
-package Baekjoon.Silver;
+// 뒤집기 
+
+package Silver;
 
 import java.util.Scanner;
 

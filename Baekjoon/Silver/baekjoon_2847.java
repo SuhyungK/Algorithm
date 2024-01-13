@@ -1,4 +1,6 @@
-package Baekjoon.Silver;
+// 게임을 만든 동준이 
+
+package Silver;
 
 import java.util.Scanner;
 

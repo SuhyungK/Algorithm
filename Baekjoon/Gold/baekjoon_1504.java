@@ -1,7 +1,5 @@
 // 특정한 최단 경로 
 
-package Baekjoon.Gold;
-
 import java.io.*;
 import java.util.*;
 

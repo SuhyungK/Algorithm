@@ -1,7 +1,5 @@
 // 줄 세우기
 
-package Baekjoon.Gold;
-
 import java.io.*;
 import java.util.*;
 

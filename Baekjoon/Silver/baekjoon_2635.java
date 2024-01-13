@@ -1,6 +1,6 @@
 // 수 이어가기
 
-package Baekjoon.Silver;
+package Silver;
 
 import java.util.ArrayList;
 import java.util.List;

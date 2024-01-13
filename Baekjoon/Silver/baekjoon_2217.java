@@ -1,6 +1,6 @@
 // 로프
 
-package Baekjoon.Silver;
+package Silver;
 
 import java.io.*;
 import java.util.*;

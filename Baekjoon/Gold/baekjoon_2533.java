@@ -1,4 +1,4 @@
-package Baekjoon.Gold;
+// 사회망 서비스(SNS)
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,7 +23,6 @@ public class baekjoon_2533 {
             
             dp[parent][0] += Math.min(dp[child][0], dp[child][1]);
             dp[parent][1] += dp[child][0];
-            // System.out.println(parent + ", " + child + " : " + Arrays.toString(dp[parent]));
         }
 
         System.out.println(parent + " : " + Arrays.toString(dp[parent]));

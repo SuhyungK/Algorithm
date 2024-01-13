@@ -1,4 +1,6 @@
-package Baekjoon.Silver;
+// 풍선 공장
+
+package Silver;
 
 import java.io.BufferedReader;
 import java.io.IOException;

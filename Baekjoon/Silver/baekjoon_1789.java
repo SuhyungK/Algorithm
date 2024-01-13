@@ -1,4 +1,6 @@
-package Baekjoon.Silver;
+// 수들의 합
+
+package Silver;
 
 import java.io.BufferedReader;
 import java.io.IOException;

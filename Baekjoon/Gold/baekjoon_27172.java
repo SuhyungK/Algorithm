@@ -1,7 +1,5 @@
 // 수 나누기 게임
 
-package Baekjoon.Gold;
-
 import java.io.*;
 import java.util.*;
 

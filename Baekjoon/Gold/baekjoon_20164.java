@@ -1,7 +1,5 @@
 // 홀수 홀릭 호석
 
-package Baekjoon.Gold;
-
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;

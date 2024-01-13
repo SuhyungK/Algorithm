@@ -1,7 +1,5 @@
 // 부분합 
 
-package Baekjoon.Gold;
-
 import java.util.Scanner;
 
 public class baekjoon_1806 {

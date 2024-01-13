@@ -1,7 +1,5 @@
 // 용액
 
-package Baekjoon.Gold;
-
 import java.util.Scanner;
 
 public class baekjoon_2467 {

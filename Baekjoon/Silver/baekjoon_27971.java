@@ -1,6 +1,6 @@
 // 강아지는 많을수록 좋다
 
-package Baekjoon.Silver;
+package Silver;
 
 import java.io.IOException;
 import java.util.Arrays;

@@ -1,8 +1,6 @@
-// ㅂ
-
 // 비밀번호 제작
 
-package Baekjoon.Platinum;
+package Platinum;
 
 import java.io.BufferedReader;
 import java.io.IOException;

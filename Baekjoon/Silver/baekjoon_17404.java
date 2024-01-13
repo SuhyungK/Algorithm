@@ -1,6 +1,6 @@
 // RGB 거리 2
 
-package Baekjoon.Silver;
+package Silver;
 
 import java.util.Scanner;
 
