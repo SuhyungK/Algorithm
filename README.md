@@ -13,7 +13,7 @@
 | 08 | :heavy_check_mark:   | :heavy_check_mark: | [5431. 민석이의 과제 체크하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWVl3rWKDBYDFAXm) | 
 | 09 | :heavy_check_mark: | :heavy_check_mark: | [1970. 쉬운 거스름돈](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PsIl6AXIDFAUq) | 
 | 10 | :heavy_check_mark: | :heavy_check_mark: | [1959. 두 개의 숫자열](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PpoFaAS4DFAUq) | 
-| 11 |    |  | [1209. Sum](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV13_BWKACUCFAYh) | 
+| 11 |  :heavy_check_mark:  |  | [1209. Sum](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV13_BWKACUCFAYh) | 
 | 12 |    |  | [4836. 색칠하기](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do) |
 | 13 |    |  | [4843. 특별한 정렬](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do) | 
 | 14 |    |  | [1210. Ladder1](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14ABYKADACFAYh) |
