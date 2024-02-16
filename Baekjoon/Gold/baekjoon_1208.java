@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.StringTokenizer;
 
 public class baekjoon_1208 {
-        static Map<Long, Long> getSubsetSum(long[] sequence, long S) {
+    static Map<Long, Long> getSubsetSum(long[] sequence, long S) {
         int n = sequence.length;
         Map<Long, Long> subsetSum = new HashMap<>();
         for (int i = 0; i < Math.pow(2, n); i++) {
