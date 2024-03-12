@@ -5,7 +5,7 @@ package Baekjoon.Gold;
 import java.util.*;
 import java.io.*;
 
-public class baekjooin_2342 {
+public class baekjoon_2342 {
     static int getPower(int s, int e) {
         if (s == 0) return 2;
         if (s == e) return 1;
