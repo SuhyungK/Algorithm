@@ -1,6 +1,8 @@
+package SWEA.Magnetic;
+
 import java.util.Scanner;
 
-public class Solution {
+class Solution {
     static Scanner sc;
 
     private static int solution() {

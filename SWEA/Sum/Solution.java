@@ -1,3 +1,5 @@
+package SWEA.Sum;
+
 import java.io.*;
 import java.util.*;
 
