@@ -18,7 +18,7 @@ public class baekjoon_23083 {
         int x; int y;
         for (int i = 0; i < K; i++) {
             x = sc.nextInt();
-            y = sc.nextInt()
+            y = sc.nextInt();
             honeycomb[x-1][y-1] = -1;
         }
 
