@@ -4,9 +4,7 @@ import java.util.*;
 
 public class Solution {
     public int solution(int[][] routes) {
-        Arrays.sort(routes, (r1, r2) -> {
-            return r1[1] - r2[1];
-        });
+        Arrays.sort(routes, Comparator.comparingInt(r -> r[1]));
 
         int endTime = -30001;
         int answer = 0;
