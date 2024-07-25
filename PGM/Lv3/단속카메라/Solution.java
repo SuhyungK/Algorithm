@@ -1,4 +1,4 @@
-package PGM.Lv3.기지국설치;
+package PGM.Lv3.단속카메라;
 
 import java.util.*;
 
